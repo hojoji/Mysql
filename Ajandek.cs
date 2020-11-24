@@ -22,5 +22,12 @@ namespace Mysql
         public int Id { get => id; set => id = value; }
         public string Nev { get => nev; set => nev = value; }
         public string Bolt { get => bolt; set => bolt = value; }
+
+
+
+        public override string ToString()
+        {
+            return string.Format("{0}",this.nev);
+        }
     }
 }
